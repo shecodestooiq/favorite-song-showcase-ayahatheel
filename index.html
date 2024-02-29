@@ -4,16 +4,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="index.css"> 
-   <title>Favorite Song Showcase</title>
+  <link rel="stylesheet" href="index.css">
+  <title>Favorite Song Showcase</title>
 </head>
 
 <body>
   <main>
     <form id="form_area">
       <style>
-        #form_area{
-          display: block;}
+        #form_area {
+          display: block;
+        }
       </style>
       <h1>What's your fav song?</h1>
 
@@ -28,7 +29,7 @@
       <br><br>
       <label for="form_youtubelink">YouTube Link:</label><br>
       <input type="text" id="form_youtubelink" name="form_youtubelink" required>
-      
+
       <br><br>
       <label for="form_description">Description:</label><br>
       <textarea id="form_description" name="form_description" required></textarea>
@@ -39,18 +40,21 @@
 
     <div id="display_area">
       <style>
-        #display_area{
-          display: none;}
+        #display_area {
+          display: none;
+        }
       </style>
 
       <h1>Your Song Information</h1>
-        <p id="display_songname"></p>
-        <p id="display_year"></p>
-        <div id="display_youtubevideo"></div><br>
-        <div id="display_description"></div>
-  </div>
- 
-  
+      <p id="display_songname"></p>
+      <p id="display_year"></p>
+      <div id="display_youtubevideo">
+        <iframe id="display_youtubeiframe_link" width="560" height="315"></iframe>
+      </div>
+      <div id="display_description"></div>
+    </div>
+
+
   </main>
   <script src="index.js"></script>
 </body>
