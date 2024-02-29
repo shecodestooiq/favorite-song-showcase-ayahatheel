@@ -13,9 +13,9 @@ function displaySongInfo(display) {
     document.getElementById("display_description").textContent = "Description: " + description_js;
 
 
-    var youtube_link = document.getElementById("form_youtubelink").value;
-    var video_iframe = document.getElementById("display_youtubeiframe_link");
-    video_iframe.src = youtube_link;
+    var form_youtube_link = document.getElementById("form_youtubelink").value;
+    var display_video_iframe = document.getElementById("display_youtubeiframe_link");
+    display_video_iframe.src = form_youtube_link;
 
     document.getElementById("form_area").style.display = "none";
     document.getElementById("display_area").style.display = "block";
